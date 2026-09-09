@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>J-POWER INNOVA | 0984024297</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#0055FF;--yellow:#FFD60A;--line:rgba(255,255,255,0.08);--muted:rgba(255,255,255,0.5)}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{background:#050507;color:white;font-family:'Poppins',sans-serif}
+nav{position:fixed;top:0;width:100%;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:16px 28px;background:rgba(5,5,7,0.8);backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}
+.logo b{color:var(--blue)}.logo span{color:var(--yellow)}
+.links{display:flex;gap:24px;font-family:'Geist Mono';font-size:11px}.links a{color:var(--muted);text-decoration:none}
+.btn-devis{background:var(--yellow);color:black;padding:10px 18px;border-radius:100px;font-weight:800;font-size:12px;text-decoration:none}
+.hero{height:100vh;display:grid;place-items:center;position:relative;overflow:hidden}
+.cable{width:1px;height:90px;background:#222;margin:0 auto}
+.head{width:88px;height:38px;background:#1a1a1a;border-radius:0 0 30px 30px;margin:0 auto;position:relative;border:1px solid #2a2a2a}
+.bulb{width:24px;height:12px;background:#111;border-radius:0 0 12px 12px;margin:32px auto 0;transition:0.6s}
+body.on .bulb{background:var(--yellow);box-shadow:0 0 20px var(--yellow),0 0 80px var(--yellow)}
+.cord{position:absolute;top:38px;right:-20px;display:flex;flex-direction:column;align-items:center;cursor:grab;touch-action:none}
+.string{width:1px;height:100px;background:repeating-linear-gradient(to bottom,#666 0 5px,transparent 5px 10px);transform-origin:top}
+.knob{width:20px;height:20px;background:radial-gradient(at 30% 30%,#777,#111);border-radius:50%;border:1px solid #333}
+.beam{position:absolute;top:128px;width:900px;height:0;opacity:0;background:conic-gradient(from 180deg at 50% 0%, rgba(0,85,255,0.18), rgba(255,214,10,0.22), transparent 65%);clip-path:polygon(40% 0,60% 0,100% 100%,0% 100%);transition:1.2s;display:grid;place-items:center}
+body.on .beam{height:800px;opacity:1}
+.hero-text{margin-top:180px;text-align:center;opacity:0;transform:translateY(40px);transition:1s 0.5s}
+body.on .hero-text{opacity:1;transform:translateY(0)}
+.hero-text h1{font-size:80px;line-height:0.85;font-weight:900;letter-spacing:-0.05em}
+.blue{color:var(--blue);text-shadow:0 0 20px rgba(0,85,255,0.6)}
+.yellow{color:var(--yellow);text-shadow:0 0 20px rgba(255,214,10,0.7);position:relative}
+.zap{position:absolute;top:-20px;right:-30px;font-size:36px;animation:zap 0.2s infinite alternate}
+@keyframes zap{to{transform:scale(1.3) rotate(10deg)}}
+section{padding:80px 28px;max-width:1100px;margin:0 auto;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+.card{background:rgba(255,255,255,0.03);border:1px solid var(--line);border-radius:18px;padding:20px}
+input,select,textarea{width:100%;background:rgba(255,255,255,0.04);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:10px;color:white;font-family:'Geist Mono';font-size:12px}
+.btn-wa{width:100%;background:#25D366;color:black;padding:16px;border:none;border-radius:12px;font-weight:900;cursor:pointer}
+footer{padding:20px;text-align:center;font-family:'Geist Mono';font-size:10px;color:var(--muted);border-top:1px solid var(--line)}
+@media(max-width:800px){.grid{grid-template-columns:1fr}.hero-text h1{font-size:48px}.links{display:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo"><b>J-POWER</b> <span>INNOVA</span></div>
+  <div class="links"><a href="#accueil">ACCUEIL</a><a href="#services">SERVICES</a><a href="#apropos">À-PROPOS</a><a href="#contact">CONTACT</a></div>
+  <a href="#devis" class="btn-devis">DEVIS 0984024297</a>
+</nav>
+
+<div class="hero" id="accueil">
+  <div style="position:absolute;top:0;display:flex;flex-direction:column;align-items:center">
+    <div class="cable"></div>
+    <div class="head"><div class="bulb"></div><div class="cord" id="cord"><div class="string" id="string"></div><div class="knob"></div></div></div>
+  </div>
+  <div class="beam"><div class="hero-text">
+    <h1><span class="blue">J-POWER</span><br><span class="yellow">INNOVA<br>INSTALLE.<span class="zap">⚡</span></span></h1>
+    <p style="font-family:'Geist Mono';font-size:12px;color:var(--muted);margin-top:14px;letter-spacing:0.2em">ON BRANCHE LUBUMBASHI • 0984024297</p>
+  </div></div>
+</div>
+
+<section id="services">
+  <h2 style="font-size:38px">Services solaires.</h2>
+  <div class="grid">
+    <div class="card"><b>☀️ Panneaux</b><br><span style="font-family:'Geist Mono';font-size:11px;color:var(--muted)">3kW à 20kW - dès 900$</span></div>
+    <div class="card"><b>🔋 Batteries Lithium</b><br><span style="font-family:'Geist Mono';font-size:11px;color:var(--muted)">5-20kWh - dès 650$</span></div>
+    <div class="card"><b>⚡ Installation maison</b><br><span style="font-family:'Geist Mono';font-size:11px;color:var(--muted)">En 24h - devis gratuit</span></div>
+  </div>
+</section>
+
+<section id="apropos">
+  <h2>Électriciens à Lubumbashi.</h2>
+  <p style="font-family:'Geist Mono';color:var(--muted);font-size:13px;line-height:1.7;margin-top:10px">On installe, on garantit. +127 maisons branchées. Pas de blabla.</p>
+</section>
+
+<section id="contact">
+  <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:20px" id="devis">
+    <div><div class="card"><b>📞 WhatsApp</b><br>0984024297<br><span style="font-family:'Geist Mono';font-size:11px;color:var(--muted)">Clique sur le bouton, ça ouvre direct</span></div></div>
+    <div style="background:rgba(255,255,255,0.03);border:1px solid var(--line);border-radius:18px;padding:20px">
+      <b>Devis gratuit → WhatsApp</b><br>
+      <input id="nom" placeholder="Ton nom">
+      <input id="tel" placeholder="Ton numéro WhatsApp">
+      <select id="service"><option>Panneaux solaires</option><option>Batterie</option><option>Maison complète</option><option>Maintenance</option></select>
+      <textarea id="msg" rows="3" placeholder="Décris ton besoin..."></textarea>
+      <button class="btn-wa" onclick="sendWA()">📲 ENVOYER SUR 0984024297</button>
+    </div>
+  </div>
+</section>
+
+<footer>© J-POWER INNOVA • 0984024297 • Lubumbashi</footer>
+
+<script>
+const cord=document.getElementById('cord'),string=document.getElementById('string');
+let drag=false,sY=0,on=false;
+const setOn=v=>{on=v;document.body.classList.toggle('on',v)};
+cord.addEventListener('pointerdown',e=>{drag=true;sY=e.clientY;cord.setPointerCapture(e.pointerId)});
+window.addEventListener('pointermove',e=>{if(!drag)return;let d=Math.max(0,Math.min(e.clientY-sY,90));string.style.height=(100+d)+'px';string.style.transform=`scaleY(${1+d/80})`});
+window.addEventListener('pointerup',e=>{if(!drag)return;drag=false;string.style.height='100px';string.style.transform='scaleY(1)';if(e.clientY-sY>35){setOn(!on)}});
+setTimeout(()=>setOn(true),600);
+function sendWA(){
+  const n=document.getElementById('nom').value||'Client';
+  const t=document.getElementById('tel').value||'—';
+  const s=document.getElementById('service').value;
+  const m=document.getElementById('msg').value||'Devis svp';
+  const num="243984024297";
+  const txt=`*DEVIS J-POWER INNOVA*%0A%0A👤 ${n}%0A📞 ${t}%0A🔧 ${s}%0A%0A📝 ${m}%0A%0A_Envoyé depuis le site_`;
+  window.open(`https://wa.me/${num}?text=${txt}`,'_blank');
+}
+</script>
+</body>
+  </html>
