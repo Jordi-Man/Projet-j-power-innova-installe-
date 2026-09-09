@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>J-POWER INNOVA - Liens</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+body{
+  background: linear-gradient(270deg,#000000,#1a0a00,#FF6A00,#000000);
+  background-size:600% 600%;
+  animation: fond 8s infinite ease;
+  min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px;
+}
+@keyframes fond{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.container{width:100%;max-width:400px;text-align:center;}
+.logo{width:80px;height:80px;background:#0a0a0a;border:3px solid #FF6A00;border-radius:50%;display:grid;place-items:center;margin:0 auto 15px;color:#FF6A00;font-size:40px;box-shadow:0 0 20px #FF6A0055;}
+h1{color:white;font-weight:900;font-size:26px;letter-spacing:1px;} h1 span{color:#FF6A00;}
+h2{color:#FF6A00;font-size:16px;letter-spacing:3px;margin-top:4px;}
+.bio{color:#bbb;font-size:13px;margin:15px 0 25px;line-height:1.5;}
+.link{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  width:100%;padding:16px;margin-bottom:14px;
+  background:rgba(10,10,10,0.9);border:2px solid #FF6A00;
+  border-radius:50px;color:white;text-decoration:none;
+  font-weight:900;font-size:15px;transition:0.3s;
+  box-shadow:0 5px 15px rgba(0,0,0,0.5);
+}
+.link:hover{background:#FF6A00;color:black;transform:scale(1.03);box-shadow:0 0 25px #FF6A00;}
+.link.orange{background:#FF6A00;color:black;border-color:#FF6A00;}
+.link.orange:hover{background:white;border-color:white;}
+.icon{font-size:20px;}
+.num{margin-top:20px;color:#FF6A00;font-weight:900;letter-spacing:2px;font-size:20px;border:1px dashed #FF6A00;padding:8px 15px;border-radius:50px;display:inline-block;}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="logo">⚡</div>
+  <h1>J-POWER <span>INNOVA</span> INSTALLE</h1>
+  <h2>INSTALLATION • SOLAIRE • DEPANNAGE</h2>
+  <p class="bio">Service pro à Lubumbashi.<br>Clique sur un bouton pour nous joindre direct.</p>
+
+  <!-- LIEN 1 : FORMULAIRE QUI ENVOIE SUR WHATSAPP -->
+  <a class="link orange" href="#" onclick="formulaire()">
+    <span class="icon">📝</span> DEVIS GRATUIT SUR WHATSAPP
+  </a>
+
+  <!-- LIEN 2 : WHATSAPP DIRECT -->
+  <a class="link" href="https://wa.me/243984024297?text=Bonjour%20J-POWER%20INNOVA%20je%20veux%20un%20devis" target="_blank">
+    <span class="icon">💬</span> CHAT WHATSAPP DIRECT
+  </a>
+
+  <!-- LIEN 3 : APPELER -->
+  <a class="link" href="tel:0984024297">
+    <span class="icon">📞</span> APPELER : 0984024297
+  </a>
+
+  <!-- LIEN 4 : EMAIL -->
+  <a class="link" href="mailto:jpowerinnova@gmail.com?subject=Devis J-POWER INNOVA&body=Bonjour, je veux un devis pour...">
+    <span class="icon">📧</span> jpowerinnova@gmail.com
+  </a>
+
+  <!-- LIEN 5 : SERVICES -->
+  <a class="link" href="https://wa.me/243984024297?text=Bonjour%2C%20je%20veux%20savoir%20vos%20services%20solaire%20et%20electrique" target="_blank">
+    <span class="icon">⚡</span> NOS SERVICES
+  </a>
+
+  <div class="num">0984024297</div>
+</div>
+
+<script>
+function formulaire(){
+  let nom = prompt("Ton Nom ?");
+  if(!nom) return;
+  let service = prompt("Service ? (Electrique / Solaire / Maintenance / Dépannage)");
+  let msg = prompt("Ton message / adresse ?");
+  let numero = "243984024297";
+  let texte = `Bonjour J-POWER INNOVA%0A%0ANom: ${nom}%0AService: ${service}%0AMessage: ${msg}`;
+  window.open(`https://wa.me/${numero}?text=${texte}`, '_blank');
+}
+</script>
+</body>
+</html>
